@@ -1,30 +1,49 @@
 # lyran
 
-```sh
-pnpm create astro@latest -- --template portfolio
+[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+
+```
+pnpm create astro@latest -- --template starlight
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun! | 🧑‍🚀 **有经验的宇航员？** 删除此文件。祝你玩得开心！
 
-> 🧑‍🚀 **Seasoned astronaut? Delete this file. Have fun!** (有经验的宇航员？删除这个文件，开始你的旅程吧！)
+## 🚀 Project Structure | 🚀 项目结构
 
-![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
+Inside of your Astro + Starlight project, you'll see the following folders and files: | 在你的 Astro + Starlight 项目中，你会看到以下文件夹和文件：
 
-## 🧞 Commands (常用命令)
+```
+.
+├── public/
+├── src/
+│   ├── assets/
+│   ├── content/
+│   │   └── docs/
+│   └── content.config.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
 
-All commands are run from the root of the project, from a terminal: (所有命令都从项目根目录通过终端运行：)
+Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name. | Starlight 会在 `src/content/docs/` 目录中查找 `.md` 或 `.mdx` 文件。每个文件都会根据文件名作为路由暴露出来。
 
-| Command (命令) | Action (作用) |
+Images can be added to `src/assets/` and embedded in Markdown with a relative link. | 图片可以添加到 `src/assets/` 中，并通过相对链接嵌入到 Markdown 中。
+
+Static assets, like favicons, can be placed in the `public/` directory. | 静态资源，如网站图标，可以放在 `public/` 目录中。
+
+## 🧞 Commands | 🧞 命令
+
+All commands are run from the root of the project, from a terminal: | 所有命令都从项目的根目录通过终端运行：
+
+| Command | Action |
 | :------------------------ | :----------------------------------------------- |
-| `pnpm install` | Installs dependencies (安装项目依赖) |
-| `pnpm dev` | Starts local dev server at `localhost:4321` (启动本地开发服务器，地址为 `localhost:4321`) |
-| `pnpm build` | Build your production site to `./dist/` (构建生产站点到 `./dist/` 目录) |
-| `pnpm preview` | Preview your build locally, before deploying (在部署前本地预览构建结果) |
-| `pnpm astro ...` | Run CLI commands like `astro add`, `astro check` (运行 CLI 命令，如 `astro add`, `astro check`) |
-| `pnpm astro -- --help` | Get help using the Astro CLI (获取 Astro CLI 的帮助信息) |
+| `pnpm install` | Installs dependencies | 安装依赖 |
+| `pnpm dev` | Starts local dev server at `localhost:4321` | 在 `localhost:4321` 启动本地开发服务器 |
+| `pnpm build` | Build your production site to `./dist/` | 将生产站点构建到 `./dist/` |
+| `pnpm preview` | Preview your build locally, before deploying | 在部署前本地预览构建 |
+| `pnpm astro ...` | Run CLI commands like `astro add`, `astro check` | 运行 CLI 命令，如 `astro add`、`astro check` |
+| `pnpm astro -- --help` | Get help using the Astro CLI | 获取 Astro CLI 的帮助信息 |
 
-## 👀 Want to learn more? (想了解更多？)
+## 👀 Want to learn more? | 👀 想了解更多？
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat). (欢迎查阅 [官方文档](https://docs.astro.build) 或加入我们的 [Discord 服务器](https://astro.build/chat)。)
+Check out [Starlight's docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat). | 查看 [Starlight 文档](https://starlight.astro.build/)，阅读 [Astro 文档](https://docs.astro.build)，或加入 [Astro Discord 服务器](https://astro.build/chat)。
